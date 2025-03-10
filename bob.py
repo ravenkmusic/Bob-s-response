@@ -5,7 +5,7 @@ def response(hey_bob):
         bob = "Sure."
     elif hey_bob.endswith("?") and hey_bob.isupper():
         bob = "Calm down, I know what I'm doing!"
-    elif hey_bob == "":
+    elif hey_bob == "" or hey_bob.isspace():
         bob = "Fine. Be that way!"
     else:
         bob = "Whatever."
