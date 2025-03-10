@@ -1,5 +1,5 @@
 def response(hey_bob):
-    if hey_bob.endswith("?"):
+    if hey_bob.endswith("?") and not hey_bob.isupper:
         bob = "Sure."
     elif hey_bob.endswith("?") and hey_bob.isupper():
         bob = "Calm down, I know what I'm doing!"
