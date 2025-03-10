@@ -3,6 +3,8 @@ def response(hey_bob):
         bob = "Calm down, I know what I'm doing!"
     elif hey_bob.endswith("?"):
         bob = "Sure."
+    elif "?" in hey_bob and hey_bob.endswith(" "):
+        bob = "Sure."
     elif hey_bob.isupper():
         bob =  "Whoa, chill out!"
     elif hey_bob == "" or hey_bob.isspace():
